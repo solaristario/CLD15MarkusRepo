@@ -1,0 +1,6 @@
+{
+  "drop_null_values": true,
+  "remove_duplicates": true,
+  "handle_outliers": true,
+  "data_type_correction": false
+}
