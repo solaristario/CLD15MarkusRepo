@@ -1,0 +1,65 @@
+2026-01-12 18:03:20 - root - INFO - 23 - Get coordinates for city Berlin from OWM direct endpoint
+2026-01-12 18:03:20 - root - INFO - 33 - Sucessfully got coordinates latitudes 52.5170365°, longitude 13.3888599°
+2026-01-12 18:03:20 - root - INFO - 41 - Get weather data from OWM with weather endpoint
+2026-01-12 18:03:20 - root - INFO - 70 - Sucessfully got weather data
+{'city_query': 'Berlin', 'city': 'Alt-Kölln', 'date': datetime.datetime(2026, 1, 12, 18, 3, 20, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': -2.51, 'weather_id': 601}
+2026-01-12 18:03:20 - root - INFO - 23 - Get coordinates for city Aachen from OWM direct endpoint
+2026-01-12 18:03:20 - root - INFO - 33 - Sucessfully got coordinates latitudes 50.776351°, longitude 6.083862°
+2026-01-12 18:03:20 - root - INFO - 41 - Get weather data from OWM with weather endpoint
+2026-01-12 18:03:20 - root - INFO - 70 - Sucessfully got weather data
+{'city_query': 'Aachen', 'city': 'Aachen', 'date': datetime.datetime(2026, 1, 12, 18, 3, 20, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 8.04, 'weather_id': 501}
+2026-01-12 18:03:20 - root - INFO - 23 - Get coordinates for city Stuttgart from OWM direct endpoint
+2026-01-12 18:03:20 - root - INFO - 33 - Sucessfully got coordinates latitudes 48.7784485°, longitude 9.1800132°
+2026-01-12 18:03:20 - root - INFO - 41 - Get weather data from OWM with weather endpoint
+2026-01-12 18:03:21 - root - INFO - 70 - Sucessfully got weather data
+{'city_query': 'Stuttgart', 'city': 'Stuttgart', 'date': datetime.datetime(2026, 1, 12, 18, 3, 6, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 5.93, 'weather_id': 500}
+2026-01-12 18:05:13 - root - INFO - 23 - Get coordinates for city Berlin from OWM direct endpoint
+2026-01-12 18:05:13 - root - INFO - 33 - Sucessfully got coordinates for city Berlin, latitude 52.5170365°, longitude 13.3888599°
+2026-01-12 18:05:13 - root - INFO - 41 - Get weather data for city Berlin from OWM with weather endpoint
+2026-01-12 18:05:14 - root - INFO - 70 - Sucessfully got weather data for city Berlin (Alt-Kölln)
+{'city_query': 'Berlin', 'city': 'Alt-Kölln', 'date': datetime.datetime(2026, 1, 12, 18, 3, 20, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': -2.51, 'weather_id': 601}
+2026-01-12 18:05:14 - root - INFO - 23 - Get coordinates for city Aachen from OWM direct endpoint
+2026-01-12 18:05:14 - root - INFO - 33 - Sucessfully got coordinates for city Aachen, latitude 50.776351°, longitude 6.083862°
+2026-01-12 18:05:14 - root - INFO - 41 - Get weather data for city Aachen from OWM with weather endpoint
+2026-01-12 18:05:14 - root - INFO - 70 - Sucessfully got weather data for city Aachen (Aachen)
+{'city_query': 'Aachen', 'city': 'Aachen', 'date': datetime.datetime(2026, 1, 12, 18, 3, 20, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 8.04, 'weather_id': 501}
+2026-01-12 18:05:14 - root - INFO - 23 - Get coordinates for city Stuttgart from OWM direct endpoint
+2026-01-12 18:05:14 - root - INFO - 33 - Sucessfully got coordinates for city Stuttgart, latitude 48.7784485°, longitude 9.1800132°
+2026-01-12 18:05:14 - root - INFO - 41 - Get weather data for city Stuttgart from OWM with weather endpoint
+2026-01-12 18:05:15 - root - INFO - 70 - Sucessfully got weather data for city Stuttgart (Stuttgart)
+{'city_query': 'Stuttgart', 'city': 'Stuttgart', 'date': datetime.datetime(2026, 1, 12, 18, 3, 6, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 5.93, 'weather_id': 500}
+2026-01-13 07:55:36 - root - INFO - 22 - Get coordinates for city Berlin from OWM direct endpoint
+2026-01-13 07:55:36 - root - INFO - 32 - Sucessfully got coordinates for city Berlin, latitude 52.5170365°, longitude 13.3888599°
+2026-01-13 07:55:36 - root - INFO - 40 - Get weather data for city Berlin from OWM with weather endpoint
+2026-01-13 07:55:37 - root - INFO - 76 - Exception getting coordinates Invalid format specifier ' descp_lang' for object of type 'str'
+2026-01-13 07:55:37 - root - INFO - 22 - Get coordinates for city Aachen from OWM direct endpoint
+2026-01-13 07:55:37 - root - INFO - 32 - Sucessfully got coordinates for city Aachen, latitude 50.776351°, longitude 6.083862°
+2026-01-13 07:55:37 - root - INFO - 40 - Get weather data for city Aachen from OWM with weather endpoint
+2026-01-13 07:55:37 - root - INFO - 76 - Exception getting coordinates Invalid format specifier ' descp_lang' for object of type 'str'
+2026-01-13 07:55:37 - root - INFO - 22 - Get coordinates for city Stuttgart from OWM direct endpoint
+2026-01-13 07:55:37 - root - INFO - 32 - Sucessfully got coordinates for city Stuttgart, latitude 48.7784485°, longitude 9.1800132°
+2026-01-13 07:55:37 - root - INFO - 40 - Get weather data for city Stuttgart from OWM with weather endpoint
+2026-01-13 07:55:37 - root - INFO - 76 - Exception getting coordinates Invalid format specifier ' descp_lang' for object of type 'str'
+2026-01-13 07:57:18 - root - INFO - 22 - Get coordinates for city Berlin from OWM direct endpoint
+2026-01-13 07:57:18 - root - INFO - 32 - Sucessfully got coordinates for city Berlin, latitude 52.5170365°, longitude 13.3888599°
+2026-01-13 07:57:18 - root - INFO - 40 - Get weather data for city Berlin from OWM with weather endpoint
+2026-01-13 07:57:19 - root - INFO - 56 - New weather id 701: {'en': 'mist'}
+2026-01-13 07:57:19 - root - INFO - 69 - Sucessfully got weather data for city Berlin (Alt-Kölln)
+{'city_query': 'Berlin', 'city': 'Alt-Kölln', 'date': datetime.datetime(2026, 1, 13, 7, 57, 20, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 0.05, 'weather_id': 701}
+2026-01-13 07:57:19 - root - INFO - 40 - Get weather data for city Berlin from OWM with weather endpoint
+2026-01-13 07:57:19 - root - INFO - 69 - Sucessfully got weather data for city Berlin (Alt-Kölln)
+{'city_query': 'Berlin', 'city': 'Alt-Kölln', 'date': datetime.datetime(2026, 1, 13, 7, 57, 20, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 0.05, 'weather_id': 701}
+2026-01-13 07:57:19 - root - INFO - 22 - Get coordinates for city Aachen from OWM direct endpoint
+2026-01-13 07:57:19 - root - INFO - 32 - Sucessfully got coordinates for city Aachen, latitude 50.776351°, longitude 6.083862°
+2026-01-13 07:57:19 - root - INFO - 40 - Get weather data for city Aachen from OWM with weather endpoint
+2026-01-13 07:57:19 - root - INFO - 56 - New weather id 804: {'en': 'overcast clouds'}
+2026-01-13 07:57:19 - root - INFO - 69 - Sucessfully got weather data for city Aachen (Aachen)
+{'city_query': 'Aachen', 'city': 'Aachen', 'date': datetime.datetime(2026, 1, 13, 7, 50, 26, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 8.19, 'weather_id': 804}
+2026-01-13 07:57:19 - root - INFO - 40 - Get weather data for city Aachen from OWM with weather endpoint
+2026-01-13 07:57:20 - root - INFO - 69 - Sucessfully got weather data for city Aachen (Aachen)
+{'city_query': 'Aachen', 'city': 'Aachen', 'date': datetime.datetime(2026, 1, 13, 7, 50, 26, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 8.19, 'weather_id': 804}
+2026-01-13 07:57:20 - root - INFO - 22 - Get coordinates for city Stuttgart from OWM direct endpoint
+2026-01-13 07:57:20 - root - INFO - 32 - Sucessfully got coordinates for city Stuttgart, latitude 48.7784485°, longitude 9.1800132°
+2026-01-13 07:57:20 - root - INFO - 40 - Get weather data for city Stuttgart from OWM with weather endpoint
+2026-01-13 07:57:20 - root - INFO - 69 - Sucessfully got weather data for city Stuttgart (Stuttgart)
+{'city_query': 'Stuttgart', 'city': 'Stuttgart', 'date': datetime.datetime(2026, 1, 13, 7, 55, 38, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 4.88, 'weather_id': 804}

@@ -14,7 +14,6 @@ logging.config.fileConfig('../config/logging_config.ini')
 logger = logging.getLogger(__name__)
 
 
-
 class DataCleaner:
     def __init__(self, input_path:str, output_path:str):
         logger.info(f"Start data cleaning")
@@ -38,14 +37,13 @@ class DataCleaner:
         return False
 
     def load_csv_data(self):
+        """Load csv file and return as pandas dataframe"""
         self.df = pd.read_csv(self.input_path)
         logger.info(f"Csv file {self.input_path} loaded, {self.df.shape[1]} columns ({self.df.columns.to_list()}), {self.df.shape[0]} rows ")
         return self.df
 
     def process_cleaning(self):
-        """
-        Execute the several cleaning steps
-        """
+        """Execute the several cleaning steps"""
         self.drop_repeated_headers()
         self.drop_empty_rows()
         self.remove_duplicates()
@@ -62,7 +60,7 @@ class DataCleaner:
             logger.info(f"Find repeated headers")
             index_before = self.df_clean.index.to_list()
             cols = self.df_clean.columns.to_list()
-            # Sort out entire rows for cells with column name in first column
+            # Sort out entire rows for cells with value equal column name in first column
             self.df_clean = self.df[self.df[cols[0]].str.contains(cols[0], na=False) == False]
             index_clean = self.df_clean.index.to_list()
             repeated_headers_index = list(set(index_before).difference(set(index_clean)))
@@ -153,11 +151,13 @@ class DataCleaner:
     def create_profiles(self):
         # Original File
         profile = ProfileReport(self.df)
+        # TODO file path based on input_file or additional user input
         original_profile_path = "../reports/report_original.html"
         profile.to_file(original_profile_path)
         logger.info(f"Report for original data saved in {original_profile_path}")
 
         profile = ProfileReport(self.df_clean)
+        # TODO file path based on output_file or additional user input
         cleaned_profile_path = "../reports/report_cleaned.html"
         profile.to_file(cleaned_profile_path)
         logger.info(f"Report for cleaned data saved in {cleaned_profile_path}")
