@@ -173,3 +173,47 @@
 2026-01-13 12:21:34 - root - INFO - 32 - Sucessfully got coordinates for city Stuttgart, latitude 48.7784485°, longitude 9.1800132°
 2026-01-13 12:21:34 - root - INFO - 74 - Sucessfully got weather data for city Stuttgart (Stuttgart)
 {'city_query': 'Stuttgart', 'city': 'Stuttgart', 'date': datetime.datetime(2026, 1, 13, 12, 14, 35, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 9.2, 'weather_id': 802}
+2026-01-14 03:13:10 - root - INFO - 32 - Sucessfully got coordinates for city Berlin, latitude 52.5170365°, longitude 13.3888599°
+2026-01-14 03:13:11 - root - INFO - 74 - Sucessfully got weather data for city Berlin (Alt-Kölln)
+{'city_query': 'Berlin', 'city': 'Alt-Kölln', 'date': datetime.datetime(2026, 1, 14, 3, 8, 14, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 3.67, 'weather_id': 804}
+2026-01-14 03:13:11 - root - INFO - 32 - Sucessfully got coordinates for city Aachen, latitude 50.776351°, longitude 6.083862°
+2026-01-14 03:13:11 - root - INFO - 74 - Sucessfully got weather data for city Aachen (Aachen)
+{'city_query': 'Aachen', 'city': 'Aachen', 'date': datetime.datetime(2026, 1, 14, 3, 13, 11, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 9.83, 'weather_id': 804}
+2026-01-14 03:13:11 - root - INFO - 32 - Sucessfully got coordinates for city Stuttgart, latitude 48.7784485°, longitude 9.1800132°
+2026-01-14 03:13:11 - root - INFO - 59 - New weather id 800: {'en': 'clear sky'}
+2026-01-14 03:13:11 - root - INFO - 74 - Sucessfully got weather data for city Stuttgart (Stuttgart)
+{'city_query': 'Stuttgart', 'city': 'Stuttgart', 'date': datetime.datetime(2026, 1, 14, 3, 10, 27, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 2.92, 'weather_id': 800}
+2026-01-14 03:13:11 - root - INFO - 81 - Exception getting coordinates 'de'
+2026-01-14 03:14:59 - root - INFO - 32 - Sucessfully got coordinates for city Berlin, latitude 52.5170365°, longitude 13.3888599°
+2026-01-14 03:14:59 - root - INFO - 78 - Sucessfully got weather data for city Berlin (Alt-Kölln)
+{'city_query': 'Berlin', 'city': 'Alt-Kölln', 'date': datetime.datetime(2026, 1, 14, 3, 8, 14, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 3.67, 'weather_id': 804}
+2026-01-14 03:14:59 - root - INFO - 32 - Sucessfully got coordinates for city Aachen, latitude 50.776351°, longitude 6.083862°
+2026-01-14 03:15:00 - root - INFO - 78 - Sucessfully got weather data for city Aachen (Aachen)
+{'city_query': 'Aachen', 'city': 'Aachen', 'date': datetime.datetime(2026, 1, 14, 3, 13, 11, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 9.83, 'weather_id': 804}
+2026-01-14 03:15:00 - root - INFO - 32 - Sucessfully got coordinates for city Stuttgart, latitude 48.7784485°, longitude 9.1800132°
+2026-01-14 03:15:00 - root - INFO - 63 - New weather id 800: {'en': 'clear sky'}
+2026-01-14 03:15:00 - root - INFO - 78 - Sucessfully got weather data for city Stuttgart (Stuttgart)
+{'city_query': 'Stuttgart', 'city': 'Stuttgart', 'date': datetime.datetime(2026, 1, 14, 3, 10, 27, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 2.92, 'weather_id': 800}
+2026-01-14 03:18:24 - root - INFO - 32 - Sucessfully got coordinates for city Berlin, latitude 52.5170365°, longitude 13.3888599°
+2026-01-14 03:18:25 - root - INFO - 78 - Sucessfully got weather data for city Berlin (Alt-Kölln)
+{'city_query': 'Berlin', 'city': 'Alt-Kölln', 'date': datetime.datetime(2026, 1, 14, 3, 8, 14, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 3.67, 'weather_id': 804}
+2026-01-14 03:18:25 - root - INFO - 32 - Sucessfully got coordinates for city Aachen, latitude 50.776351°, longitude 6.083862°
+2026-01-14 03:18:25 - root - INFO - 78 - Sucessfully got weather data for city Aachen (Aachen)
+{'city_query': 'Aachen', 'city': 'Aachen', 'date': datetime.datetime(2026, 1, 14, 3, 13, 11, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 9.83, 'weather_id': 804}
+2026-01-14 03:18:25 - root - INFO - 32 - Sucessfully got coordinates for city Stuttgart, latitude 48.7784485°, longitude 9.1800132°
+2026-01-14 03:18:25 - root - INFO - 63 - New weather id 800: {'en': 'clear sky'}
+2026-01-14 03:18:25 - root - INFO - 78 - Sucessfully got weather data for city Stuttgart (Stuttgart)
+{'city_query': 'Stuttgart', 'city': 'Stuttgart', 'date': datetime.datetime(2026, 1, 14, 3, 10, 27, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 2.92, 'weather_id': 800}
+2026-01-14 03:18:50 - root - INFO - 32 - Sucessfully got coordinates for city Berlin, latitude 52.5170365°, longitude 13.3888599°
+2026-01-14 03:18:50 - root - INFO - 78 - Sucessfully got weather data for city Berlin (Alt-Kölln)
+{'city_query': 'Berlin', 'city': 'Alt-Kölln', 'date': datetime.datetime(2026, 1, 14, 3, 8, 14, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 3.67, 'weather_id': 804}
+2026-01-14 03:18:50 - root - INFO - 32 - Sucessfully got coordinates for city Aachen, latitude 50.776351°, longitude 6.083862°
+2026-01-14 03:18:50 - root - INFO - 78 - Sucessfully got weather data for city Aachen (Aachen)
+{'city_query': 'Aachen', 'city': 'Aachen', 'date': datetime.datetime(2026, 1, 14, 3, 13, 11, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 9.83, 'weather_id': 804}
+2026-01-14 03:18:50 - root - INFO - 32 - Sucessfully got coordinates for city Stuttgart, latitude 48.7784485°, longitude 9.1800132°
+2026-01-14 03:18:51 - root - INFO - 63 - New weather id 800: {'en': 'clear sky'}
+2026-01-14 03:18:51 - root - INFO - 78 - Sucessfully got weather data for city Stuttgart (Stuttgart)
+{'city_query': 'Stuttgart', 'city': 'Stuttgart', 'date': datetime.datetime(2026, 1, 14, 3, 10, 27, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 2.92, 'weather_id': 800}
+2026-01-14 03:18:51 - root - INFO - 46 - Requesting weather data for missing weather description for 800 in de
+2026-01-14 03:18:51 - root - INFO - 78 - Sucessfully got weather data for city Stuttgart (Stuttgart)
+{'city_query': 'Stuttgart', 'city': 'Stuttgart', 'date': datetime.datetime(2026, 1, 14, 3, 10, 27, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600), 'Mitteleuropäische Zeit')), 'temperature': 2.92, 'weather_id': 800}

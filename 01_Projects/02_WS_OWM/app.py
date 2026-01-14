@@ -30,6 +30,10 @@ def fetch_owm_weather_data(city):
             lon = data[0]["lon"]
             lat = data[0]["lat"]
             logging.info(f"Sucessfully got coordinates for city {city}, latitude {lat}°, longitude {lon}°")
+        except Exception as e:
+            logging.info(f"Exception getting coordinates {e}")
+            return {}
+        else:
             if lon and lat:
                 weather_data = {} # Collecting weather data
                 weather_codes = {} # Collecting weather description for multiple languages
@@ -37,8 +41,8 @@ def fetch_owm_weather_data(city):
 
                 weather_id = 9999
                 for l, lang in enumerate(["en", "de"]):
-                    if len(weather_data)==0 or (weather_id in weather_codes and not weather_codes[weather_id][lang]):
-                        if (weather_id in weather_codes and not weather_codes[weather_id][lang]):
+                    if len(weather_data)==0 or (weather_id in weather_codes and (lang not in weather_codes[weather_id] or not weather_codes[weather_id][lang])):
+                        if (weather_id in weather_codes and (lang not in weather_codes[weather_id] or not weather_codes[weather_id][lang])):
                             logging.info(f"Requesting weather data for missing weather description for {weather_id} in {lang}")
                         # logging.info(f"Get weather data for city {city} from OWM with weather endpoint")
                         # Get weather data from OWM with weather endpoint
@@ -77,9 +81,7 @@ def fetch_owm_weather_data(city):
 
                 weather_codes_to_db(weather_codes)
 
-        except Exception as e:
-            logging.info(f"Exception getting coordinates {e}")
-            return {}
+
     else:
         logging.info(f"Error requesting coordinates with status code {response.status_code}")
         return {}
