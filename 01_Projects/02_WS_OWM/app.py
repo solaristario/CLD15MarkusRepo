@@ -19,7 +19,7 @@ load_dotenv(".env")
 API_KEY =  os.environ.get("API_KEY")
 
 def fetch_owm_weather_data(city):
-    logging.info(f"Get coordinates for city {city} from OWM direct endpoint")
+    # logging.info(f"Get coordinates for city {city} from OWM direct endpoint")
     # Get coordinates for city name from OWM direct endpoint
     url = f"http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=3&appid={API_KEY}"
     response = requests.get(url)
@@ -34,10 +34,13 @@ def fetch_owm_weather_data(city):
                 weather_data = {} # Collecting weather data
                 weather_codes = {} # Collecting weather description for multiple languages
                 weather_codes = weather_codes_from_db() # Fill with existing descriptions from db
+
                 weather_id = 9999
                 for l, lang in enumerate(["en", "de"]):
-                    if len(weather_data)==0 or lang not in weather_codes[weather_id]:
-                        logging.info(f"Get weather data for city {city} from OWM with weather endpoint")
+                    if len(weather_data)==0 or (weather_id in weather_codes and not weather_codes[weather_id][lang]):
+                        if (weather_id in weather_codes and not weather_codes[weather_id][lang]):
+                            logging.info(f"Requesting weather data for missing weather description for {weather_id} in {lang}")
+                        # logging.info(f"Get weather data for city {city} from OWM with weather endpoint")
                         # Get weather data from OWM with weather endpoint
                         url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_KEY}&units=metric&lang={lang}"
                         response = requests.get(url)
@@ -56,6 +59,8 @@ def fetch_owm_weather_data(city):
                                 logging.info(f"New weather id {weather_id}: {weather_codes[weather_id]}")
                             else:
                                 weather_codes[weather_id][lang] = descp_lang
+                                if lang not in weather_codes[weather_id]:
+                                    logging.info(f"New weather description in {lang} for {weather_id}: {weather_codes[weather_id]}")
 
                             # Save weather data
                             if len(weather_data)==0:
