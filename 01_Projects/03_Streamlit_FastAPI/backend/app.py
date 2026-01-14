@@ -16,7 +16,7 @@ os.chdir(Path(__file__).parent)
 # 1. Create the APP
 app = FastAPI()
 
-# http://127.0.0.1:8000/predict?
+# http://52.158.35.106:8000/predict?
 @app.get("/predict")
 async def predict_iris(idx:int=None, params:list=None):
     """

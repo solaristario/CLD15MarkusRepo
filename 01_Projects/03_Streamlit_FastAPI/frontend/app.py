@@ -12,7 +12,7 @@ from pathlib import Path
 os.chdir(Path(__file__).parent)
 
 def main():
-    api_url = "http://127.0.0.1:8000" # URL to backend API
+    api_url = "http://52.158.35.106:8000/" # URL to backend API
     st.title("Welcome to my iris species prediction application")
 
     st.subheader("Choose datasource")
