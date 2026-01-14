@@ -18,7 +18,19 @@ app = FastAPI()
 
 # http://127.0.0.1:8000/predict?
 @app.get("/predict")
-async def predict_iris(idx:int=9999, params:list=None):
+async def predict_iris(idx:int=None, params:list=None):
+    """
+    Predict iris species using a trained ML model (Random Forest).
+    :param idx: Index of parameter set in test dataset
+    :param params: List of user defined parameter values
+    :return: json dict {
+        "msg": Message,
+        "index": Used index in test dataset (default: None),
+        "params": Used list of parameter values,
+        "predicted": Result of prediction as index of species,
+        "expected": Expected result from test data (default: None)
+    }
+    """
     # 1. Load the model
     model = load_model()
 
@@ -27,8 +39,8 @@ async def predict_iris(idx:int=9999, params:list=None):
         # 2. Load iris data for user example selection
         X, y = load_iris_data(select="test")
 
-        # If idx is default choose random number
-        if idx == 9999:
+        # If idx is default choose random number for idx
+        if idx is None:
             idx = random.randrange(len(X))
 
         params = X[idx]

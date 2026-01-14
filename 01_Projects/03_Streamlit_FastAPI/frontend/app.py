@@ -1,7 +1,7 @@
 """
-> pip install streamlit
-> streamlit run app.py
-> streamlit run app.py --server.port 8000
+Streamlit Application for determing iris species based on existing or user data using a backend in FastAPI
+pip install streamlit
+streamlit run app.py --server.port 8000
 """
 import streamlit as st
 import requests
@@ -12,6 +12,7 @@ from pathlib import Path
 os.chdir(Path(__file__).parent)
 
 def main():
+    api_url = "http://127.0.0.1:8000" # URL to backend API
     st.title("Welcome to my iris species prediction application")
 
     st.subheader("Choose datasource")
@@ -24,14 +25,15 @@ def main():
         ],
     )
 
-    url_predict = f"http://127.0.0.1:8000/predict"
+    # Initiate URL to predict endpoint
+    url_predict = f"{api_url}/predict"
 
     if radio_select == "Index":
         # Add input field
         idx = int(st.text_input("Iris Index", 0))
 
         # Add Table with test data
-        url = f"http://127.0.0.1:8000/get_dataset?select=test"
+        url = f"{api_url}/get_dataset?select=test"
         response = requests.get(url)
         data = response.json()
 
@@ -39,11 +41,11 @@ def main():
         # table.drop(["species"], axis=1, inplace=True)
         st.table(table)
 
-        url_predict = f"http://127.0.0.1:8000/predict?idx={idx}"
+        url_predict = f"{api_url}/predict?idx={idx}"
 
     elif radio_select == "User Defined Parameters":
         # Get list of features to create correct number of input fields
-        url = f"http://127.0.0.1:8000/list_features"
+        url = f"{api_url}/list_features"
         response = requests.get(url)
         feature_list = response.json()
 
@@ -54,7 +56,7 @@ def main():
         for c, col in enumerate(cols):
             with col:
                 params.append(float(st.text_input(feature_list[c].capitalize(), 10).replace(",",".")))
-        url_predict = f"http://127.0.0.1:8000/predict?params={params}"
+        url_predict = f"{api_url}/predict?params={params}"
 
     # 3. Add a Button to predict
     if st.button("Predict"):
@@ -66,7 +68,7 @@ def main():
         expected = data["expected"]
 
         # Get name of species for given numerical index
-        url = f"http://127.0.0.1:8000/name_species?index={predicted}"
+        url = f"{api_url}/name_species?index={predicted}"
         response = requests.get(url)
         predicted_name = response.text.replace("\"", "")
 
